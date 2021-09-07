@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#14213d;
+  }
+body, html {
+    height: 96%;
+  }
+h1{
+    text-align: center;
+    color:#14213d;
+    font-family: cursive;
+}
+  .container {
+      margin: 150px auto;
+      width: 30vw;
+  }
+  .result{
+      border: 1px solid black;
+      margin: 20px;
+      height: 20vh;
+  }
+  
+  .bg-image{
+      filter: blur(3px);
+      background-image: url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .form-control{
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .weatherText {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bolder;
+      background: transparent !important;
+  }
+  .card header{
+      color: rgba(255, 255, 255, 0.1);
+  }
+  .card-title{
+      color: rgb(1, 1, 138);
+      font-weight: bolder;
+      /* background-color: #adb5bd; */
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 5px;
+  }
+  .curr_temp {
+      font-size:xx-large;
+      text-shadow: 1px 2px rgb(97, 97, 97);
+      margin: 10px;
+  }
+  .card {
+      position: absolute;
+      z-index: 2;
+      box-shadow: 2px 2px 5px rgb(59, 59, 59);
+      background-color:#adb5bd; 
+      background-color: rgba(255, 255, 255, 0.1);
+      font-family: sans-serif;
+      top:200px;
+  }
+  .card-body{
+      background-color: #adb5bd; /* Fallback color */
+      background-color: rgba(255, 255, 255, 0.1); /* Black w/opacity/see-through */
+  }
+  
+  
+  @media (max-width:600px){
+      .card {
+      position: absolute;
+          z-index: 2;
+          box-shadow: 2px 2px 5px rgb(59, 59, 59);
+          background-color: #adb5bd; 
+          background-color: rgba(255, 255, 255, 0.1);
+          font-family: serif;
+          top:120px;
+          left:15px;
+      }
+  }
+  @media (max-width:300px){
+      .card {
+      position: absolute;
+          z-index: 2;
+          box-shadow: 2px 2px 5px rgb(59, 59, 59);
+          background-color: #adb5bd; 
+          background-color: rgba(255, 255, 255, 0.1);
+          font-family: serif;
+          top:60px;
+          /* left:px; */
+      }
+  }
