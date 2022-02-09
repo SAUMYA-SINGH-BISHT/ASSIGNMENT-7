@@ -6,7 +6,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=pithoragarh&units=metri
         return data.json();
     }).then((data) => {
         if (data.name !== undefined) {
-            let curr = new Date().getDate() + " " + months[new Date().getMonth()] + " 2021";
+            let curr = new Date().getDate() + " " + months[new Date().getMonth()] + " 2022";
             let temp = `<span class="temp">${data.main.temp} &#176;C</span>`
 
             document.querySelector('.city_name').innerHTML = data.name;
